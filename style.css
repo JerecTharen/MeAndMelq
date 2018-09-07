@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.backgroundPicture {
+    background-image: url("./leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.container {
+    height: 100%;
+    width: 100%;
+
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    background-color: lightgray;
+}
+.links, .searchBar {
+    margin: auto 0;
+}
+.mainContent {
+    width: 40%;
+    margin: 1em auto;
+    background-color: #e0f2b6;
+}
+.subNav {
+    margin: 1em auto;
+    width: 95%;
+}
+.subLinks {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a1cf31;
+}
+.descriptor {
+    background-image: url("./Notice_bar_background.png");
+    background-size: cover;
+}
+.subMainContent {
+    margin: auto;
+    width: 96%;
+    padding-bottom: 1em;
+}
+.top {
+    background-color: #ffffee;
+}
+.welcomeMessage {
+    display: flex;
+    flex-direction: column;
+}
+.welcomeMessage h1 {
+    align-self: center;
+}
+.subMessage {
+    display: flex;
+}
+.bottom {
+    display: flex;
+    margin-top: 1em;
+}
+.left {
+    background-color: #ffffee;
+}
+h3 {
+    background-color: #c4e673;
+    width: 90%;
+    margin: auto;
+    margin-top: .5em;
+}
