@@ -6,21 +6,36 @@ html, body {
 }
 .container {
     height: 100%;
+    font-family: "Roboto", sans-serif;
 }
 .top {
-    background-color: #6a9bef;
+    background-color: #3f45f5;
 }
 nav {
     display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
 }
-nav a {
+nav, nav a {
+
+    color: #FFFFFF;
     text-decoration: none;
+    font-size: large;
+}
+div.navLeft {
+    width: 30%;
 }
 div.navLeft img {
-    width: 10%;
+    width: 15%;
+}
+div.navMiddle a {
+    margin: auto 1em;
+}
+div.navRight button {
+    font-size: 32px;
 }
 div.profilePicture img {
-    width: 10%;
+    width: 5%;
     border-radius: 50%;
 }
 .profileBottom {
