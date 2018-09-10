@@ -29,3 +29,21 @@ div.profilePicture img {
 div.profileBottom div {
     margin: .5em;
 }
+.bottomLeft{
+    height:100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+.bottomLeft a{
+    padding: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray();
+    display: block;
+}
