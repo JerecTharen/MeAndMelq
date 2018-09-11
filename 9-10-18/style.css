@@ -5,8 +5,19 @@ html, body {
     height: 100%;
 }
 .container {
-    height: 100%;
+    height: 60%;
+    width: 60%;
+    margin: auto auto;
     font-family: "Roboto", sans-serif;
+}
+.colorBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url("colors.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .top {
     background-color: #3f45f5;
@@ -48,9 +59,9 @@ div.profilePicture img {
 div.profileBottom div {
     margin: .5em;
 }
-.profileBottom > .followers:last-child {
+.makeGray {
     color: #7987f6;
-    background-color: green;
+
 }
 .bottomLeft{
     height:100%;
