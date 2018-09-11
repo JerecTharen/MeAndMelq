@@ -4,6 +4,9 @@ html, body {
     width: 100%;
     height: 100%;
 }
+body {
+    display: flex;
+}
 .container {
     height: 60%;
     width: 60%;
@@ -43,7 +46,7 @@ div.navMiddle a {
     margin: auto 1em;
 }
 div.navRight button {
-    font-size: 32px;
+    
 }
 .profilePicture {
     color: #FFFFFF;
