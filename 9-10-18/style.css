@@ -8,9 +8,9 @@ body {
     display: flex;
 }
 .container {
-    height: 60%;
-    width: 60%;
-    margin: auto auto;
+    height: 90%;
+    width: 90%;
+    margin: auto;
     font-family: "Roboto", sans-serif;
 }
 .colorBackground {
@@ -34,7 +34,6 @@ nav, nav a {
 
     color: #FFFFFF;
     text-decoration: none;
-    font-size: large;
 }
 div.navLeft {
     width: 30%;
@@ -42,15 +41,23 @@ div.navLeft {
 div.navLeft img {
     width: 15%;
 }
+.navMiddle {
+    width:70%;
+
+}
 div.navMiddle a {
     margin: auto 1em;
 }
-div.navRight button {
-    
+.topLeft {
+    margin: 1em;
 }
 .profilePicture {
     color: #FFFFFF;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
 }
 div.profilePicture img {
     width: 5%;
