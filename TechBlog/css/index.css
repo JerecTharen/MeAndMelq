@@ -27,6 +27,10 @@ a {
   flex-direction: column;
   align-items: center; }
 
+.btn {
+  background-color: #d0c8bd;
+  border: solid 0.2em #a6c3b7; }
+
 .homeNav {
   display: flex;
   width: 100%; }
@@ -64,19 +68,21 @@ a {
 .techPic3 {
   background-image: url("../heroImages/techPic3.jpg"); }
 
-.subscribe #subscribe {
-  border: solid 0.2em #a6c3b7; }
-
-.subscribe input[type="submit"] {
-  background-color: #a6c3b7; }
+.subscribe {
+  margin: .5em 0; }
+  .subscribe #subscribe {
+    border: solid 0.2em #a6c3b7; }
+  .subscribe input[type="submit"] {
+    background-color: #a6c3b7; }
 
 .homeContent {
   justify-content: space-between; }
 
 .homeLeft {
-  width: 40%; }
+  width: 50%; }
 
-.androidPic {
+.androidPic, .forrestPic, .universePic {
+  margin-left: 3em;
   background-image: url("../story1/technology.jpg"); }
 
 .forrestPic {
@@ -84,6 +90,13 @@ a {
 
 .universePic {
   background-image: url("../story3/ourUniverse.jpg"); }
+
+.story1, .story2, .story3 {
+  border: solid 0.2em #a6c3b7;
+  background-color: #a6c3b7;
+  margin-top: 2em;
+  border-radius: 1em;
+  margin-left: 1em; }
 
 .homeRight {
   width: 40%; }
@@ -100,3 +113,20 @@ a {
 
 .melq {
   background-image: url("../MelqProfile.png"); }
+
+.advert {
+  background-image: repeating-linear-gradient(to top right, #a6c3b7 10%, #ffffff 20%);
+  color: #101012; }
+
+@media only screen and (max-width: 600px) {
+  .homeNav {
+    flex-wrap: wrap; }
+    .homeNav nav {
+      flex-wrap: wrap; }
+  .homeLogo {
+    opacity: 0; }
+  .homeContent, .story1, .story2, .story3, .authorProfiles {
+    flex-direction: column;
+    align-items: center; }
+  .homeRight, .homeLeft {
+    width: 90%; } }

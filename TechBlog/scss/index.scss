@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
 }
+.btn {
+  background-color: $solidColor;
+  border: $importantBorder;
+}
 
 .homeNav {
   display: flex;
@@ -52,6 +56,7 @@
 }
 
 .subscribe {
+  margin: .5em 0;
   #subscribe {
     border: $importantBorder;
   }
@@ -69,19 +74,27 @@
 }
 
 .homeLeft {
-  width: 40%;
+  width: 50%;
 }
 .androidPic {
   @extend .devPic1;
+  margin-left: 3em;
   background-image: url("../story1/technology.jpg");
 }
 .forrestPic {
-  @extend .devPic1;
+  @extend .androidPic;
   background-image: url("../story2/rainForrest.jpg");
 }
 .universePic {
-  @extend .devPic1;
+  @extend .androidPic;
   background-image: url("../story3/ourUniverse.jpg");
+}
+.story1, .story2, .story3 {
+  border: $importantBorder;
+  background-color: $greenAccent;
+  margin-top: 2em;
+  border-radius: 1em;
+  margin-left: 1em;
 }
 
 .homeRight {
@@ -100,4 +113,29 @@
 .melq {
   @extend .jacob;
   background-image: url("../MelqProfile.png");
+}
+
+.advert {
+  background-image: repeating-linear-gradient(to top right, $greenAccent 10%, $ourWhite 20%);
+  color: $darkAccent;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeNav {
+    flex-wrap: wrap;
+    nav {
+      flex-wrap: wrap;
+    }
+  }
+  //ask about how best to resize img tags
+  .homeLogo {
+    opacity: 0;
+  }
+  .homeContent, .story1, .story2, .story3, .authorProfiles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .homeRight, .homeLeft {
+    width: 90%;
+  }
 }
