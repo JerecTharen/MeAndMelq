@@ -1,17 +1,42 @@
 html, body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  color: #101012; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #dedede;
+  font-family: "Roboto", sans-serif; }
+
+.container {
+  background-color: #ffffff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  border-radius: .5em; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .homeNav {
-  display: flex; }
+  display: flex;
+  width: 100%; }
   .homeNav nav {
-    margin: auto; }
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
     .homeNav nav a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #a6c3b7; }
+
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
 
 .devPic1, .techPic2, .techPic3 {
   height: 10em;
@@ -25,3 +50,21 @@ body {
 
 .techPic3 {
   background-image: url("../heroImages/techPic3.jpg"); }
+
+.subscribe #subscribe {
+  border: solid 0.2em #a6c3b7; }
+
+.subscribe input[type="submit"] {
+  background-color: #a6c3b7; }
+
+.authorProfiles {
+  display: flex; }
+
+.jacob, .melq {
+  width: 8em;
+  height: 8em;
+  background-image: url("../JacobProfile.jpg");
+  border-radius: 50%; }
+
+.melq {
+  background-image: url("../MelqProfile.png"); }
