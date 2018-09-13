@@ -21,6 +21,13 @@
     }
   }
 }
+.homeLogo a{
+  display: flex;
+  h1 {
+    color: $greenAccent;
+    align-self: center;
+  }
+}
 
 .hero {
   display: flex;
@@ -33,6 +40,7 @@
   background-image: url("../heroImages/devPic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: .5em;
 }
 .techPic2 {
   @extend .devPic1;
@@ -53,8 +61,35 @@
   }
 }
 
+.homeContent,.story1, .story2, .story3, .authorProfiles {
+  @extend %storyStyling;
+}
+.homeContent {
+  justify-content: space-between;
+}
+
+.homeLeft {
+  width: 40%;
+}
+.androidPic {
+  @extend .devPic1;
+  background-image: url("../story1/technology.jpg");
+}
+.forrestPic {
+  @extend .devPic1;
+  background-image: url("../story2/rainForrest.jpg");
+}
+.universePic {
+  @extend .devPic1;
+  background-image: url("../story3/ourUniverse.jpg");
+}
+
+.homeRight {
+  width:40%;
+}
 .authorProfiles {
-  display: flex;
+  margin: auto;
+  justify-content: space-between;
 }
 .jacob {
   width: 8em;

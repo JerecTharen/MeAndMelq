@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: auto;
   width: 100%;
   color: #101012; }
 
@@ -11,10 +11,16 @@ body {
 
 .container {
   background-color: #ffffff;
-  height: 100%;
+  height: auto;
   width: 80%;
   margin: auto;
   border-radius: .5em; }
+
+.homeContent, .story1, .story2, .story3, .authorProfiles {
+  display: flex; }
+
+a {
+  text-decoration: none; }
 
 .container {
   display: flex;
@@ -33,17 +39,24 @@ body {
       text-decoration: none;
       color: #a6c3b7; }
 
+.homeLogo a {
+  display: flex; }
+  .homeLogo a h1 {
+    color: #a6c3b7;
+    align-self: center; }
+
 .hero {
   display: flex;
   width: 100%;
   justify-content: space-around; }
 
-.devPic1, .techPic2, .techPic3 {
+.devPic1, .techPic2, .techPic3, .androidPic, .forrestPic, .universePic {
   height: 10em;
   width: 10em;
   background-image: url("../heroImages/devPic1.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  border-radius: .5em; }
 
 .techPic2 {
   background-image: url("../heroImages/techPic2.jpg"); }
@@ -57,8 +70,27 @@ body {
 .subscribe input[type="submit"] {
   background-color: #a6c3b7; }
 
+.homeContent {
+  justify-content: space-between; }
+
+.homeLeft {
+  width: 40%; }
+
+.androidPic {
+  background-image: url("../story1/technology.jpg"); }
+
+.forrestPic {
+  background-image: url("../story2/rainForrest.jpg"); }
+
+.universePic {
+  background-image: url("../story3/ourUniverse.jpg"); }
+
+.homeRight {
+  width: 40%; }
+
 .authorProfiles {
-  display: flex; }
+  margin: auto;
+  justify-content: space-between; }
 
 .jacob, .melq {
   width: 8em;
