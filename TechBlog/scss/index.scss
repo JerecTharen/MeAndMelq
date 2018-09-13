@@ -1,1 +1,27 @@
 @import "global";
+
+.homeNav {
+  display: flex;
+  nav {
+    margin: auto;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.devPic1 {
+  height: 10em;
+  width: 10em;
+  background-image: url("../heroImages/devPic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.techPic2 {
+  @extend .devPic1;
+  background-image: url("../heroImages/techPic2.jpg");
+}
+.techPic3 {
+  @extend .devPic1;
+  background-image: url("../heroImages/techPic3.jpg");
+}
