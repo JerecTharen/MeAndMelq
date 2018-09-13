@@ -13,6 +13,7 @@
 .homeNav {
   display: flex;
   width: 100%;
+  margin-top: 1em;
 
   nav {
     margin: auto;
@@ -75,6 +76,7 @@
 
 .homeLeft {
   width: 50%;
+  margin-bottom: 1em;
 }
 .androidPic {
   @extend .devPic1;
@@ -99,6 +101,7 @@
 
 .homeRight {
   width:40%;
+  margin-right: 1em;
 }
 .authorProfiles {
   margin: auto;
