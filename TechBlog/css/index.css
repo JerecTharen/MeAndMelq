@@ -50,6 +50,18 @@ a {
     color: #a6c3b7;
     align-self: center; }
 
+.hiddenLogo {
+  height: 10em;
+  width: 10em;
+  margin: auto;
+  position: absolute;
+  top: 3em;
+  background-image: url("../techLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  z-index: -3; }
+
 .hero {
   display: flex;
   width: 100%;
@@ -125,9 +137,13 @@ a {
   .homeNav {
     flex-wrap: wrap; }
     .homeNav nav {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      font-size: smaller; }
   .homeLogo {
     opacity: 0; }
+  .hiddenLogo {
+    opacity: 0.9;
+    z-index: 3; }
   .homeContent, .story1, .story2, .story3, .authorProfiles {
     flex-direction: column;
     align-items: center; }

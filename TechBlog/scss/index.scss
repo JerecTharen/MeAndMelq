@@ -33,6 +33,18 @@
     align-self: center;
   }
 }
+.hiddenLogo {
+  height: 10em;
+  width: 10em;
+  margin: auto;
+  position: absolute;
+  top: 3em;
+  background-image: url("../techLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  z-index: -3;
+}
 
 .hero {
   display: flex;
@@ -128,11 +140,16 @@
     flex-wrap: wrap;
     nav {
       flex-wrap: wrap;
+      font-size: smaller;
     }
   }
   //ask about how best to resize img tags
   .homeLogo {
     opacity: 0;
+  }
+  .hiddenLogo {
+    opacity: 0.9;
+    z-index: 3;
   }
   .homeContent, .story1, .story2, .story3, .authorProfiles {
     flex-direction: column;
