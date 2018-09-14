@@ -18,3 +18,50 @@ body {
 
 a {
   text-decoration: none; }
+
+.logo {
+  display: flex;
+  justify-content: center; }
+
+.nav {
+  display: flex;
+  justify-content: center; }
+
+.nav a {
+  color: #a6c3b7; }
+
+.content {
+  display: flex; }
+
+.icons {
+  margin: 0 1%; }
+
+i:nth-child(1) {
+  color: #bd081b; }
+
+i:nth-child(2) {
+  color: #00aced; }
+
+i:nth-child(3) {
+  color: #2a5297; }
+
+.story {
+  display: flex; }
+
+.bigbox {
+  margin: 0 2 0 0%;
+  background-color: #101012;
+  height: 7%;
+  width: 15%; }
+  .bigbox h2 {
+    color: #ffffff; }
+
+article {
+  width: 66%; }
+
+.storyoneimg {
+  background-image: url("../story1/technology.jpg");
+  width: 100%;
+  height: 30em;
+  background-repeat: no-repeat;
+  background-size: cover; }
